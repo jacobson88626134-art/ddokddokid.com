@@ -331,43 +331,49 @@
         </section>
 
         <!-- 필독 칼럼 섹션 (계정 리스크 분석 및 차트 시각화) -->
-        <section id="featured-column" class="bg-white rounded-3xl p-8 sm:p-10 border border-slate-200 shadow-lg mb-16">
-            <div class="max-w-3xl mb-8">
-                <span class="inline-block px-3 py-1 rounded-md bg-rose-100 text-rose-700 font-bold text-xs mb-3">🔥 심층 리포트</span>
-                <h2 class="text-2xl sm:text-3xl font-black text-slate-900 mb-4">
+        <section id="featured-column" class="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-8 lg:p-10 border border-slate-200 shadow-lg mb-12 sm:mb-16">
+            <div class="max-w-3xl mb-6 sm:mb-8">
+                <span class="inline-block px-3 py-1 rounded-md bg-rose-100 text-rose-700 font-bold text-xs mb-2.5 sm:mb-3">🔥 심층 리포트</span>
+                <h2 class="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 mb-3 sm:mb-4 leading-snug">
                     "비실명 아이디의 위험성과 비즈니스 계정을 활용한 안전한 마케팅 대안"
                 </h2>
-                <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                <p class="text-slate-600 leading-relaxed text-xs sm:text-sm lg:text-base">
                     많은 마케터가 <strong>네이버아이디 구매처</strong>나 <strong>계정 거래처</strong>를 찾아 불법 계정을 대량 수급하지만, 이는 네이버 보안 AI 시스템에 의해 즉각 감지됩니다. 
                     아래 비교 차트는 어둠의 경로로 구매한 비실명 계정과 공식 <strong>비즈니스 계정</strong>의 6개월 후 잔존율 및 마케팅 효율 차이를 시각화한 결과입니다.
                 </p>
             </div>
 
             <!-- 차트 영역 -->
-            <div class="grid lg:grid-cols-3 gap-8 items-center bg-slate-50 p-6 rounded-2xl border border-slate-100 mb-8">
-                <div class="lg:col-span-2 relative h-64 sm:h-80 w-full">
+            <div class="grid lg:grid-cols-3 gap-5 lg:gap-8 items-center bg-slate-50 p-4 sm:p-6 rounded-2xl border border-slate-100 mb-6 sm:mb-8">
+                <div class="lg:col-span-2 relative h-56 sm:h-72 lg:h-80 w-full">
                     <canvas id="accountRiskChart"></canvas>
                 </div>
-                <div class="space-y-4 text-xs sm:text-sm">
-                    <div class="p-3 bg-white rounded-xl border border-rose-100">
-                        <span class="font-bold text-rose-600 block mb-1">❌ 구매한 비실명 아이디</span>
-                        <p class="text-slate-500">평균 수명 2~4주. IP 대역 차단 시 연쇄 영구 정지 발생. 상위 노출 반영 불가.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3 text-xs sm:text-sm">
+                    <div class="p-3.5 bg-white rounded-xl border border-rose-100 shadow-sm">
+                        <span class="font-bold text-rose-600 flex items-center gap-1.5 mb-1">
+                            <svg class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>
+                            구매한 비실명 아이디
+                        </span>
+                        <p class="text-slate-500 leading-relaxed text-xs">평균 수명 2~4주. IP 대역 차단 시 연쇄 영구 정지 발생. 상위 노출 반영 불가.</p>
                     </div>
-                    <div class="p-3 bg-white rounded-xl border border-emerald-100">
-                        <span class="font-bold text-emerald-600 block mb-1">✅ 공식 비즈니스 계정</span>
-                        <p class="text-slate-500">생존율 100%. 법인/사업자 정식 가입으로 권한 분배 및 영구적 자산화 가능.</p>
+                    <div class="p-3.5 bg-white rounded-xl border border-emerald-100 shadow-sm">
+                        <span class="font-bold text-emerald-600 flex items-center gap-1.5 mb-1">
+                            <svg class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            공식 비즈니스 계정
+                        </span>
+                        <p class="text-slate-500 leading-relaxed text-xs">생존율 100%. 법인/사업자 정식 가입으로 권한 분배 및 영구적 자산화 가능.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="prose max-w-none text-slate-700 text-sm sm:text-base leading-relaxed space-y-4">
-                <h3 class="text-lg font-bold text-slate-900">왜 네이버아이디 구매 거래는 결국 실패하는가?</h3>
+            <div class="prose max-w-none text-slate-700 text-xs sm:text-sm lg:text-base leading-relaxed space-y-3 sm:space-y-4">
+                <h3 class="text-base sm:text-lg font-bold text-slate-900">왜 네이버아이디 구매 거래는 결국 실패하는가?</h3>
                 <p>
                     네이버는 단일 기기에서의 다중 로그인, 가상 IP 대역, 기계적인 패턴(MAC 주소 중복)을 실시간으로 분석합니다. 
                     어렵게 상위 노출에 성공하더라도 계정이 보호조치에 들어가면 작성된 원고까지 통합 검색에서 즉각 누락됩니다.
                 </p>
                 <div class="pt-2">
-                    <a href="pages/resources" class="inline-flex items-center gap-2 font-bold text-emerald-600 hover:text-emerald-700">
+                    <a href="pages/resources" class="inline-flex items-center gap-2 font-bold text-xs sm:text-sm text-emerald-600 hover:text-emerald-700 transition-colors">
                         <span>안전하게 마케팅하는 비즈니스 계정 생성 가이드 읽기</span>
                         <span>→</span>
                     </a>
@@ -493,18 +499,13 @@
                         <div class="w-6 h-6 rounded bg-emerald-500 text-slate-950 font-black text-xs flex items-center justify-center">N</div>
                         <span class="font-extrabold text-white text-base">똑똑한 아이디</span>
                     </div>
-                    <p class="text-xs text-slate-500 mb-2">네이버아이디 비즈니스 활용 가이드 및 온라인 마케팅 노하우 정보 제공 사이트</p>
-                    <a href="https://t.me/gamza79" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs text-sky-400 hover:text-sky-300 font-semibold transition-colors">
-                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.562 8.161c-.18.717-.962 4.084-1.362 5.438-.168.572-.378.763-.581.782-.444.041-.782-.292-1.213-.574-.674-.442-1.054-.716-1.708-1.147-.756-.498-.266-.772.165-1.22.113-.117 2.072-1.9 2.11-2.062.005-.02.01-.092-.033-.13-.043-.038-.107-.025-.153-.015-.065.014-1.1 1.002-3.107 2.355-.294.202-.56.301-.798.296-.262-.006-.767-.148-1.142-.27-.46-.15-.826-.23-.794-.486.017-.133.197-.27.54-.41 2.118-.922 3.53-1.53 4.237-1.825 2.014-.836 2.433-.982 2.705-.987.06 0 .194.015.281.086.073.059.093.139.102.196.009.057.02.188.01.296z"/></svg>
-                        <span>고객센터 텔레그램 : @gamza79</span>
-                    </a>
+                    <p class="text-xs text-slate-500">네이버아이디 비즈니스 활용 가이드 및 온라인 마케팅 노하우 정보 제공 사이트</p>
                 </div>
                 <div class="flex flex-wrap gap-4 text-xs font-semibold">
                     <a href="pages/blog" class="hover:text-emerald-400 transition-colors">블로그 가이드</a>
                     <a href="pages/cafe" class="hover:text-emerald-400 transition-colors">카페 가이드</a>
                     <a href="pages/kin" class="hover:text-emerald-400 transition-colors">지식iN 가이드</a>
                     <a href="pages/resources" class="hover:text-emerald-400 transition-colors">가이드 및 자료실</a>
-                    <a href="https://t.me/gamza79" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 transition-colors">고객센터(텔레그램)</a>
                 </div>
             </div>
 
