@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 다계정 SafeVisit 크롬 세팅법 &amp; 비실명 계정 만들기 한계 비교 | 똑똑한아이디</title>
+    <meta name="description" content="네이버 다계정 안전 운영을 위한 SafeVisit 크롬 다운로드·설치 및 IP 분리 세팅 가이드! 네이버 비실명 계정 만들기 한계와 100% 정품 실명 아이디 구매 차이점을 비교해 드립니다.">
+    <meta name="keywords" content="네이버 다계정, safevisit 크롬, safevisit 다운로드, 네이버 비실명 계정 만들기, 네이버 아이디 보호조치, 네이버 실명 아이디 구매, 똑똑한아이디">
+    <meta name="author" content="똑똑한아이디">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+    <link rel="canonical" href="https://ddokddokid.com/pages/resources/multi-account-safevisit">
+    <link rel="icon" type="image/webp" href="/img/logo.webp" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:site_name" content="똑똑한아이디">
+    <meta property="og:title" content="네이버 다계정 SafeVisit 크롬 세팅법 &amp; 비실명 vs 실명 비교 | 똑똑한아이디">
+    <meta property="og:description" content="SafeVisit 크롬 설정부터 1계정 1IP 테더링 세팅, 네이버 비실명 계정 만들기 한계 분석까지 마케터 필수 실전 가이드.">
+    <meta property="og:url" content="https://ddokddokid.com/pages/resources/multi-account-safevisit">
+    <meta property="og:image" content="https://ddokddokid.com/img/logo.webp">
+
+    <!-- Google Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #ffffff;
+            color: #0f172a;
+            scroll-behavior: smooth;
+        }
+        .gradient-border {
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+        .gradient-border:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 10px 30px -10px rgba(37, 99, 235, 0.15);
+        }
+    </style>
+
+    <!-- Schema.org JSON-LD: Article + BreadcrumbList + HowTo + FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "네이버 다계정 SafeVisit 크롬 세팅법 및 비실명 계정 만들기 한계 완벽 비교",
+          "description": "네이버 다계정 운영 시 보호조치를 피하기 위한 SafeVisit 크롬 설치·세팅 방법과 비실명 계정 대비 실명 계정의 장단점을 정리합니다.",
+          "image": "https://ddokddokid.com/img/logo.webp",
+          "author": {
+            "@type": "Organization",
+            "name": "똑똑한아이디",
+            "url": "https://ddokddokid.com/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "똑똑한아이디",
+            "url": "https://ddokddokid.com/"
+          },
+          "datePublished": "2026-11-25",
+          "dateModified": "2026-11-25",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://ddokddokid.com/pages/resources/multi-account-safevisit"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://ddokddokid.com/" },
+            { "@type": "ListItem", "position": 2, "name": "마케팅 자료실", "item": "https://ddokddokid.com/pages/resources" },
+            { "@type": "ListItem", "position": 3, "name": "네이버 다계정 & SafeVisit 크롬 가이드", "item": "https://ddokddokid.com/pages/resources/multi-account-safevisit" }
+          ]
+        },
+        {
+          "@type": "HowTo",
+          "name": "네이버 다계정 안전 운영을 위한 SafeVisit 크롬 및 IP 분리 세팅 방법",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "name": "공식 Chrome 웹 스토어에서 SafeVisit 다운로드",
+              "text": "비공식 파일을 피하고 공식 Chrome 웹 스토어를 통해 SafeVisit 확장프로그램을 안전하게 설치합니다."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "계정별 크롬 사용자 프로필 1:1 생성",
+              "text": "크롬 우측 상단 프로필 메뉴에서 계정마다 별도 프로필을 만들어 쿠키·캐시·로컬스토리지를 완전히 분리합니다."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "시크릿 모드 허용 및 세션 초기화 설정",
+              "text": "단기 배포 계정은 확장프로그램 설정에서 시크릿 모드 허용을 켜고 작업 종료 시 브라우저를 완전히 닫아 흔적을 제거합니다."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "국내 통신사 IP 매칭 및 변경 확인",
+              "text": "해외 VPN을 끄고 스마트폰 LTE/5G 테더링(비행기모드 5초 ON/OFF) 또는 국내 전용 고정 IP로 접속합니다."
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "SafeVisit 크롬 확장프로그램만 설치하면 네이버 다계정이 안전한가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SafeVisit 크롬은 브라우저 환경·프라이버시 보조 도구로 유용하지만, 네이버 다계정 보호조치의 핵심 원인인 동일 IP 중복 접속과 쿠키 잔존 문제는 별도로 해결해야 합니다. 계정별 크롬 프로필 분리와 LTE/5G 테더링(또는 전용 고정 IP) 전환을 반드시 병행해야 안전합니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "네이버 비실명 계정 만들기는 현재 마케팅에 활용 가능한가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "해외 번호 등을 통한 네이버 비실명 계정 만들기는 가입 직후 로그인 제한이나 보호조치 확률이 매우 높고, 카페 글쓰기·지식인 답변·블로그 검색 노출 등 핵심 기능이 제한됩니다. 또한 보호조치 발생 시 본인 인증 해제가 불가능해 실전 마케팅에는 정품 실명 계정이 훨씬 효율적입니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "네이버 다계정 운영 시 계정 몇 개당 몇 개의 IP가 필요한가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "장기 육성용 휴면 실명 계정은 1계정당 1고정 IP 또는 1모바일 테더링 회선 매칭이 원칙이며, 단기 배포용 일회용 계정도 계정 전환 시마다 비행기모드 5초 ON/OFF로 통신사 IP를 갱신하고 쿠키를 초기화하는 것이 안전합니다."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-white text-slate-800 antialiased">
+
+    <!-- Header (Consistent with index.html, Mobile Header CTA Hidden) -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="https://ddokddokid.com/" class="flex items-center gap-3 group" title="똑똑한아이디 공식 홈">
+                    <span class="text-3xl transform group-hover:scale-110 transition-transform">💡</span>
+                    <span class="text-2xl font-black tracking-tight text-slate-900 group-hover:text-blue-600 transition-colors">똑똑한아이디</span>
+                    <span class="hidden sm:inline-block text-xs font-extrabold bg-blue-50 text-blue-600 px-2.5 py-1 rounded-full border border-blue-100">N-ID Solution</span>
+                </a>
+
+                <nav class="hidden md:flex items-center space-x-7 text-sm font-semibold text-slate-600">
+                    <a href="/" class="hover:text-blue-600 transition-colors">홈</a>
+                    <a href="/pages/blog" class="hover:text-blue-600 transition-colors">블로그</a>
+                    <a href="/pages/cafe" class="hover:text-blue-600 transition-colors">카페</a>
+                    <a href="/pages/kin" class="hover:text-blue-600 transition-colors">지식인</a>
+                    <a href="/pages/resources" class="text-blue-600 font-bold">마케팅 자료실</a>
+                </nav>
+
+                <div class="flex items-center gap-3">
+                    <a href="https://t.me/gamza79" target="_blank" rel="noopener noreferrer" class="hidden md:flex bg-blue-600 hover:bg-blue-700 text-white font-bold px-5 py-2.5 rounded-xl shadow-sm transition-all text-sm items-center gap-2">
+                        <i class="fab fa-telegram-plane"></i>
+                        <span>1:1 빠른 상담</span>
+                    </a>
+                    <button onclick="toggleMobileMenu()" class="md:hidden p-2 text-slate-600 hover:text-slate-900" aria-label="메뉴 열기">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-2">
+            <a href="/" class="block py-2 text-slate-700 font-bold border-b border-slate-50">홈</a>
+            <a href="/pages/blog" class="block py-2 text-slate-700 font-bold border-b border-slate-50">블로그 마케팅</a>
+            <a href="/pages/cafe" class="block py-2 text-slate-700 font-bold border-b border-slate-50">카페 마케팅</a>
+            <a href="/pages/kin" class="block py-2 text-slate-700 font-bold border-b border-slate-50">지식인 마케팅</a>
+            <a href="/pages/resources" class="block py-2 text-blue-600 font-bold border-b border-slate-50">마케팅 자료실</a>
+            <a href="https://t.me/gamza79" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-blue-600 text-white font-bold py-3 rounded-xl mt-3">텔레그램 1:1 상담 (@gamza79)</a>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
+
+        <!-- Breadcrumb -->
+        <nav aria-label="Breadcrumb" class="text-xs sm:text-sm text-slate-500 mb-6 flex flex-wrap items-center gap-2">
+            <a href="/" class="hover:text-blue-600">홈</a>
+            <span>/</span>
+            <a href="/pages/resources" class="hover:text-blue-600">마케팅 자료실</a>
+            <span>/</span>
+            <span class="text-slate-900 font-semibold">네이버 다계정 · SafeVisit 크롬 가이드</span>
+        </nav>
+
+        <article>
+            <div class="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-extrabold mb-4">
+                실전 환경 세팅 · 2026 최신판
+            </div>
+
+            <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight mb-4">
+                네이버 다계정 SafeVisit 크롬 세팅법 &amp; 비실명 계정 만들기 한계 완벽 비교
+            </h1>
+
+            <p class="text-base text-slate-600 leading-relaxed mb-8">
+                블로그·카페·지식인 바이럴을 위해 <strong>네이버 다계정</strong>을 운용할 때 마케터들이 가장 먼저 찾는 것이 <strong>SafeVisit 크롬 다운로드</strong>와 <strong>네이버 비실명 계정 만들기</strong>입니다. 하지만 브라우저 격리와 IP 분리의 원리를 모른 채 잘못 세팅하면 계정이 연쇄적으로 잠기게 됩니다. 실무에서 보호조치 없이 다계정을 돌리는 정확한 세팅 순서를 정리했습니다.
+            </p>
+
+            <!-- Hero Visual Card -->
+            <div class="mb-10 p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white border border-slate-800">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+                    <div class="p-4 rounded-2xl bg-white/10 backdrop-blur border border-white/10">
+                        <i class="fab fa-chrome text-2xl text-blue-400 mb-2"></i>
+                        <div class="text-xs text-slate-300 font-semibold">STEP 01</div>
+                        <div class="text-sm font-extrabold mt-0.5">SafeVisit · 프로필 격리</div>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-white/10 backdrop-blur border border-white/10">
+                        <i class="fas fa-signal text-2xl text-emerald-400 mb-2"></i>
+                        <div class="text-xs text-slate-300 font-semibold">STEP 02</div>
+                        <div class="text-sm font-extrabold mt-0.5">국내 통신사 1:1 IP 분리</div>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-white/10 backdrop-blur border border-white/10">
+                        <i class="fas fa-user-check text-2xl text-amber-400 mb-2"></i>
+                        <div class="text-xs text-slate-300 font-semibold">STEP 03</div>
+                        <div class="text-sm font-extrabold mt-0.5">100% 국내 실명 계정 투입</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TOC -->
+            <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 mb-12">
+                <div class="text-xs font-extrabold text-slate-400 uppercase tracking-wider mb-3">목차 바로가기</div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-sm font-bold text-slate-700">
+                    <a href="#safevisit-setup" class="hover:text-blue-600">1. SafeVisit 크롬 다운로드 및 안전한 세팅 4단계</a>
+                    <a href="#multi-rules" class="hover:text-blue-600">2. 네이버 다계정 운영 핵심 3원칙 (IP·프로필)</a>
+                    <a href="#planner" class="hover:text-blue-600">3. 다계정 환경 자동 설계 진단기 (Interactive)</a>
+                    <a href="#nonreal-vs-real" class="hover:text-blue-600">4. 네이버 비실명 계정 만들기 vs 실명 아이디 비교</a>
+                    <a href="#faq" class="hover:text-blue-600">5. 자주 묻는 질문 (FAQ)</a>
+                </div>
+            </div>
+
+            <!-- Section 1 -->
+            <section id="safevisit-setup" class="mb-14 scroll-mt-24">
+                <h2 class="text-2xl font-black text-slate-900 mb-3">1. SafeVisit 크롬 다운로드 및 안전한 세팅 4단계</h2>
+                <p class="text-sm sm:text-base text-slate-600 leading-relaxed mb-6">
+                    <strong>SafeVisit 크롬</strong>(세이프비짓)은 브라우저 추적 방지 및 프라이버시 보호 환경을 보조하는 도구로 자주 활용됩니다. 다만 크롬 확장프로그램만 깔고 기존 창에서 여러 계정을 번갈아 로그인하는 것은 매우 위험합니다. 반드시 아래 순서로 설치하고 격리 환경을 함께 구성하세요.
+                </p>
+
+                <ol class="space-y-4">
+                    <li class="p-5 rounded-2xl border border-slate-200 bg-white flex gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-xl bg-blue-600 text-white font-black text-sm flex items-center justify-center">1</span>
+                        <div>
+                            <h3 class="font-extrabold text-slate-900 mb-1">공식 Chrome 웹 스토어에서 SafeVisit 다운로드 및 설치</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">비공식 블로그나 출처 불명의 설치 파일(.crx/.exe)은 악성코드나 계정 탈취 위험이 있습니다. 반드시 크롬 공식 웹 스토어에서 최신 버전 확장프로그램을 확인해 설치하세요.</p>
+                        </div>
+                    </li>
+                    <li class="p-5 rounded-2xl border border-slate-200 bg-white flex gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-xl bg-blue-600 text-white font-black text-sm flex items-center justify-center">2</span>
+                        <div>
+                            <h3 class="font-extrabold text-slate-900 mb-1">계정별 크롬 사용자 프로필(Profile) 1:1 분리 생성</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">크롬 우측 상단 프로필 아이콘 → <strong>'추가'</strong>를 눌러 계정 수만큼 독립 프로필(예: <code>계정A_블로그</code>, <code>계정B_카페</code>)을 생성합니다. 프로필이 다르면 쿠키·캐시·자동완성·확장프로그램 데이터가 100% 물리적으로 분리됩니다.</p>
+                        </div>
+                    </li>
+                    <li class="p-5 rounded-2xl border border-slate-200 bg-white flex gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-xl bg-blue-600 text-white font-black text-sm flex items-center justify-center">3</span>
+                        <div>
+                            <h3 class="font-extrabold text-slate-900 mb-1">시크릿 모드 허용 및 쿠키 잔존 차단</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">단기 배포용 계정은 확장프로그램 세부정보에서 '시크릿 모드에서 허용'을 활성화하고, 작업 종료 시 창을 완전히 닫아 세션 흔적이 남지 않도록 관리하세요.</p>
+                        </div>
+                    </li>
+                    <li class="p-5 rounded-2xl border border-slate-200 bg-white flex gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-xl bg-blue-600 text-white font-black text-sm flex items-center justify-center">4</span>
+                        <div>
+                            <h3 class="font-extrabold text-slate-900 mb-1">해외 우회 IP 비활성화 &amp; 국내 통신사 IP 매칭</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">네이버 로그인 시 해외 노드를 경유하면 즉시 이상 접속으로 판단되어 <a href="/pages/resources/security-checklist" class="text-blue-600 font-bold underline">네이버 아이디 보호조치</a>가 걸립니다. 반드시 국내 통신사 LTE/5G 테더링이나 전용 국내 고정 IP만 사용하세요.</p>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- Section 2 -->
+            <section id="multi-rules" class="mb-14 scroll-mt-24">
+                <h2 class="text-2xl font-black text-slate-900 mb-3">2. 네이버 다계정 운영 핵심 3원칙</h2>
+                <p class="text-sm sm:text-base text-slate-600 leading-relaxed mb-6">
+                    실제 마케팅 대행사들이 수십~수백 개의 <strong>네이버 다계정</strong>을 사고 없이 유지하는 비결은 아래 3가지 기본 수칙의 철저한 준수입니다.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+                        <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center font-bold mb-4">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3 class="font-extrabold text-slate-900 mb-2">원칙 1. IP 대역 완전 분리</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            장기 육성 계정은 1계정 1고정 IP, 단기 배포 계정은 전환 시마다 스마트폰 비행기모드 5초 ON/OFF 후 <code>네이버 IP 조회</code>로 IP 변경 확인이 필수입니다.
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+                        <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center font-bold mb-4">
+                            <i class="fas fa-fingerprint"></i>
+                        </div>
+                        <h3 class="font-extrabold text-slate-900 mb-2">원칙 2. 브라우저·기기 일관성</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            하나의 크롬 프로필에는 하나의 계정만 고정 매칭하세요. 로그아웃 후 같은 창에 다른 아이디를 치는 순간 모든 계정이 동일 사용자로 묶입니다.
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+                        <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center font-bold mb-4">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="font-extrabold text-slate-900 mb-2">원칙 3. 초기 워밍업 &amp; 분산 패턴</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            새 기기 로그인 직후 15분간 자연스러운 검색·뉴스 열람 후 작업을 시작하고, 여러 계정에서 완전히 같은 문구·링크를 연속 붙여넣기 하지 마세요.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: Interactive Planner -->
+            <section id="planner" class="mb-14 scroll-mt-24">
+                <div class="p-6 sm:p-8 rounded-3xl bg-slate-50 border border-slate-200">
+                    <span class="text-xs font-extrabold text-blue-600 uppercase tracking-wider">Interactive Environment Planner</span>
+                    <h2 class="text-2xl font-black text-slate-900 mt-1 mb-2">3. 내 다계정 운영 규모별 권장 세팅 진단기</h2>
+                    <p class="text-sm text-slate-600 mb-6">운용할 계정 수와 주력 마케팅 목적을 선택하면 필요한 크롬 프로필, IP 방식, 추천 계정 라인업을 자동 계산합니다.</p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                        <div>
+                            <label for="acc-count" class="block text-xs font-extrabold text-slate-700 mb-2">운용 예정 계정 수</label>
+                            <select id="acc-count" onchange="updatePlanner()" class="w-full p-3.5 rounded-xl bg-white border border-slate-300 font-bold text-slate-900 text-sm focus:border-blue-600 outline-none">
+                                <option value="small">소규모 (5 ~ 15개)</option>
+                                <option value="medium" selected>중규모 (20 ~ 50개)</option>
+                                <option value="large">대행사/대규모 (100개 이상)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="acc-goal" class="block text-xs font-extrabold text-slate-700 mb-2">주력 마케팅 목적</label>
+                            <select id="acc-goal" onchange="updatePlanner()" class="w-full p-3.5 rounded-xl bg-white border border-slate-300 font-bold text-slate-900 text-sm focus:border-blue-600 outline-none">
+                                <option value="viral" selected>카페 댓글 · 지식인 · 단기 배포</option>
+                                <option value="seo">블로그 상위노출 · 카페 장기 육성</option>
+                                <option value="hybrid">블로그 육성 + 바이럴 배포 병행</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div class="p-4 rounded-xl bg-slate-50">
+                            <div class="text-xs font-bold text-slate-400 mb-1">권장 IP 구성</div>
+                            <div id="plan-ip" class="text-sm font-extrabold text-slate-900">LTE/5G 테더링 1~2회선 (계정 전환마다 IP 리셋)</div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50">
+                            <div class="text-xs font-bold text-slate-400 mb-1">권장 브라우저 격리</div>
+                            <div id="plan-browser" class="text-sm font-extrabold text-slate-900">SafeVisit + 시크릿 창 세션 초기화</div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-blue-50 border border-blue-100">
+                            <div class="text-xs font-bold text-blue-600 mb-1">최적 계정 라인업</div>
+                            <div id="plan-account" class="text-sm font-extrabold text-blue-900">일회용 실명 계정 (₩1,300~ · 100개+ 할인)</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4 -->
+            <section id="nonreal-vs-real" class="mb-14 scroll-mt-24">
+                <h2 class="text-2xl font-black text-slate-900 mb-3">4. 네이버 비실명 계정 만들기 vs 정품 실명 아이디 구매 비교</h2>
+                <p class="text-sm sm:text-base text-slate-600 leading-relaxed mb-6">
+                    초기 비용을 아끼기 위해 해외 번호 인증 등으로 <strong>네이버 비실명 계정 만들기</strong>를 시도하는 경우가 많지만, 최근 강화된 네이버 보안 정책상 실전 마케팅에 투입하기에는 치명적인 제약이 따릅니다.
+                </p>
+
+                <div class="overflow-x-auto border border-slate-200 rounded-2xl mb-6">
+                    <table class="w-full text-left border-collapse text-sm">
+                        <thead>
+                            <tr class="bg-slate-50 border-b border-slate-200 text-slate-900">
+                                <th class="py-3.5 px-4 font-extrabold whitespace-nowrap">비교 항목</th>
+                                <th class="py-3.5 px-4 font-extrabold text-slate-500">비실명 계정 (직접 생성·해외 번호)</th>
+                                <th class="py-3.5 px-4 font-extrabold text-blue-700 bg-blue-50/50">100% 국내 실명 인증 계정 (똑똑한아이디)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200 text-slate-700">
+                            <tr>
+                                <td class="py-3.5 px-4 font-bold text-slate-900">보호조치 발생률</td>
+                                <td class="py-3.5 px-4 text-red-600 font-semibold">매우 높음 (생성 직후·첫 글 작성 시 즉시 잠김)</td>
+                                <td class="py-3.5 px-4 font-bold text-blue-700 bg-blue-50/30">낮음 (특히 고연식 휴면 실명 계정 최상급 안정성)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3.5 px-4 font-bold text-slate-900">카페·지식인·블로그 권한</td>
+                                <td class="py-3.5 px-4">실명 인증 필수 카페 가입/글쓰기 불가, 지식인 제한</td>
+                                <td class="py-3.5 px-4 font-bold text-slate-900 bg-blue-50/30">네이버 전 서비스 제한 없이 즉시 활동 가능</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3.5 px-4 font-bold text-slate-900">상위 노출 지수 반영</td>
+                                <td class="py-3.5 px-4">검색 누락(저품질) 및 스팸 필터링 빈번</td>
+                                <td class="py-3.5 px-4 font-bold text-slate-900 bg-blue-50/30">블로그 C-Rank·DIA+ 및 카페 인기글 정상 반영</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3.5 px-4 font-bold text-slate-900">투입 시간 &amp; 효율성</td>
+                                <td class="py-3.5 px-4">번호 구매·생성·차단 복구에 막대한 시간 낭비</td>
+                                <td class="py-3.5 px-4 font-bold text-slate-900 bg-blue-50/30">결제 후 5분 이내 즉시 수령 + 초기 불량 100% 교환</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Conversion Bridge Box -->
+                <div class="p-6 sm:p-8 rounded-3xl border-2 border-blue-600 bg-white shadow-sm">
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                        <span class="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-extrabold">똑똑한아이디 공식 공급</span>
+                        <span class="text-xs font-bold text-amber-800 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full">공지알림: 가격은 실시간 상황에 따라 변동이 있음</span>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-2">
+                        비실명 차단 스트레스 없이, 검증된 네이버 실명 아이디로 바로 시작하세요
+                    </h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                        단기 배포용 <strong>일회용 실명 계정(₩1,300~)</strong>부터 블로그·카페 장기 육성용 <strong>고연식 휴면 실명 계정(₩18,000~)</strong>까지, 지금 실시간 견적을 확인하고 1:1 상담을 받아보실 수 있습니다.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="/#calculator" class="flex-1 text-center bg-blue-600 hover:bg-blue-700 text-white font-extrabold py-3.5 px-6 rounded-xl transition text-sm">
+                            실시간 견적 계산 및 실명 아이디 구매 →
+                        </a>
+                        <a href="https://t.me/gamza79" target="_blank" rel="noopener noreferrer" class="text-center bg-slate-900 hover:bg-slate-800 text-white font-extrabold py-3.5 px-6 rounded-xl transition text-sm">
+                            텔레그램 문의 (@gamza79)
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 5: FAQ -->
+            <section id="faq" class="mb-14 scroll-mt-24">
+                <h2 class="text-2xl font-black text-slate-900 mb-6">5. 네이버 다계정 · SafeVisit 자주 묻는 질문 (FAQ)</h2>
+                <div class="space-y-4">
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white">
+                        <button onclick="toggleFaq(this)" class="w-full p-5 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50">
+                            <span>Q. SafeVisit 크롬 확장프로그램만 설치하면 네이버 다계정이 안전한가요?</span>
+                            <i class="fas fa-chevron-down text-slate-400 transition-transform rotate-180"></i>
+                        </button>
+                        <div class="px-5 pb-5 text-sm text-slate-600 leading-relaxed bg-slate-50/50 border-t border-slate-100 pt-4">
+                            SafeVisit 크롬은 브라우저 환경·프라이버시 보조 도구로 유용하지만, 보호조치의 핵심 원인인 동일 IP 중복 접속과 쿠키 잔존 문제는 별도로 해결해야 합니다. 계정별 크롬 프로필 분리와 LTE/5G 테더링(또는 전용 고정 IP) 전환을 반드시 병행해야 안전합니다.
+                        </div>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white">
+                        <button onclick="toggleFaq(this)" class="w-full p-5 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50">
+                            <span>Q. 네이버 비실명 계정 만들기는 현재 마케팅에 활용 가능한가요?</span>
+                            <i class="fas fa-chevron-down text-slate-400 transition-transform"></i>
+                        </button>
+                        <div class="hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed bg-slate-50/50 border-t border-slate-100 pt-4">
+                            해외 번호 등을 통한 비실명 계정 만들기는 가입 직후 로그인 제한이나 보호조치 확률이 매우 높고, 카페 글쓰기·지식인 답변·블로그 검색 노출 등 핵심 기능이 제한됩니다. 또한 보호조치 발생 시 본인 인증 해제가 불가능해 실전 마케팅에는 정품 실명 계정이 훨씬 효율적입니다.
+                        </div>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white">
+                        <button onclick="toggleFaq(this)" class="w-full p-5 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50">
+                            <span>Q. 네이버 다계정 운영 시 계정 몇 개당 몇 개의 IP가 필요한가요?</span>
+                            <i class="fas fa-chevron-down text-slate-400 transition-transform"></i>
+                        </button>
+                        <div class="hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed bg-slate-50/50 border-t border-slate-100 pt-4">
+                            장기 육성용 휴면 실명 계정은 1계정당 1고정 IP 또는 1모바일 테더링 회선 매칭이 원칙이며, 단기 배포용 일회용 계정도 계정 전환 시마다 비행기모드 5초 ON/OFF로 통신사 IP를 갱신하고 쿠키를 초기화하는 것이 안전합니다.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Related Internal Links -->
+            <section class="pt-8 border-t border-slate-200">
+                <h2 class="text-lg font-black text-slate-900 mb-4">이어서 보면 좋은 핵심 자료</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <a href="/pages/resources/security-checklist" class="gradient-border p-4 rounded-2xl block bg-white">
+                        <div class="text-xs font-extrabold text-red-600 mb-1">보안 필수</div>
+                        <div class="font-bold text-slate-900 text-sm">네이버 아이디 보호조치 이유 및 예방 체크리스트</div>
+                    </a>
+                    <a href="/pages/resources/biz-setup" class="gradient-border p-4 rounded-2xl block bg-white">
+                        <div class="text-xs font-extrabold text-blue-600 mb-1">에이전시 세팅</div>
+                        <div class="font-bold text-slate-900 text-sm">비즈니스 다계정·팀 세팅 완벽 가이드</div>
+                    </a>
+                    <a href="/pages/cafe" class="gradient-border p-4 rounded-2xl block bg-white">
+                        <div class="text-xs font-extrabold text-emerald-600 mb-1">카페 바이럴</div>
+                        <div class="font-bold text-slate-900 text-sm">네이버 카페 실명 아이디 활성화 전략</div>
+                    </a>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white text-slate-600 py-12 border-t border-slate-200 text-xs mt-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <span class="text-2xl">💡</span>
+                <div>
+                    <div class="font-extrabold text-slate-900 text-base">똑똑한아이디</div>
+                    <div class="text-slate-500 mt-0.5">Professional Account Provider · ddokddokid.com</div>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-center gap-5 font-semibold text-slate-600">
+                <a href="/" class="hover:text-blue-600">홈</a>
+                <a href="/pages/blog" class="hover:text-blue-600">블로그</a>
+                <a href="/pages/cafe" class="hover:text-blue-600">카페</a>
+                <a href="/pages/kin" class="hover:text-blue-600">지식인</a>
+                <a href="/pages/resources" class="hover:text-blue-600">마케팅 자료실</a>
+                <a href="https://t.me/gamza79" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-bold">텔레그램 @gamza79</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        }
+
+        function toggleFaq(button) {
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('.fa-chevron-down');
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                answer.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        function updatePlanner() {
+            const count = document.getElementById('acc-count').value;
+            const goal = document.getElementById('acc-goal').value;
+
+            const ipEl = document.getElementById('plan-ip');
+            const browserEl = document.getElementById('plan-browser');
+            const accountEl = document.getElementById('plan-account');
+
+            if (goal === 'viral') {
+                ipEl.innerText = count === 'large'
+                    ? 'LTE/5G 테더링 3회선+ 로테이션 (비행기모드 리셋)'
+                    : 'LTE/5G 테더링 1~2회선 (계정 전환마다 IP 리셋)';
+                browserEl.innerText = 'SafeVisit + 시크릿 창 세션 초기화';
+                accountEl.innerText = '일회용 실명 계정 (₩1,300~ · 100개+ 할인)';
+            } else if (goal === 'seo') {
+                ipEl.innerText = count === 'small'
+                    ? '계정별 통신사 고정 IP 또는 전담 테더링 1:1 매칭'
+                    : '국내 통신사 전용 고정 IP 풀 (1계정 1고정 IP 원칙)';
+                browserEl.innerText = '계정당 크롬 독립 프로필 1:1 고정 (쿠키 유지)';
+                accountEl.innerText = '고연식 휴면 실명 계정 (₩18,000~)';
+            } else {
+                ipEl.innerText = '육성용 고정 IP + 배포용 모바일 테더링 이원화';
+                browserEl.innerText = '육성용 독립 크롬 프로필 + 배포용 시크릿 격리';
+                accountEl.innerText = '휴면 실명(육성) + 일회용 실명(배포) 혼합 구성';
+            }
+        }
+    </script>
+</body>
+</html>
